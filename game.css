@@ -1,0 +1,127 @@
+*{
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.box{
+    position: absolute;
+    top: 300px;
+    height: 100px;
+    width: 100px;
+    left: 150px;
+    background-color:black;
+    animation: abc 0.5 linear infinite alternate;
+    border: black solid 2px;
+    border-radius: 100%;
+   
+}
+.box1{
+    position: absolute;
+    top: 300px;
+    height: 100px;
+    width: 100px;
+    left: 1200px;
+    background-color: rgb(255, 255, 255);
+     
+    /*animation: pqr 2s linear infinite forwards;*/
+    
+}
+.animate{
+     animation: aj 1.25s ease-in-out infinite;
+}
+
+
+
+
+.container2{
+    height: 400px;
+    width: 1300px;
+    background-color:darkgray;
+    border: 1px solid black;
+}
+.container3{
+    height: 200px;
+    width: 1300px;
+    background-color:dimgrey;
+}
+@keyframes abc{
+
+    0%{
+        transform: rotate(0deg);
+       
+   
+    }
+      100%{
+        transform: rotate(90deg);
+        
+    }
+}
+@keyframes pqr{
+    0%{
+        left:1300px;
+    }
+   
+    100%{
+        left: 0px;
+    }
+}
+@keyframes aj{
+    0%{
+        top:300px;
+        left:150px;
+        
+    }
+    50%{
+        top:50px;
+        
+    }
+    100%{
+        top:300px;
+        left: 250px;
+       
+    }
+}
+.pause{
+    animation-play-state: paused;
+}
+.main {
+    text-align: center;
+}
+
+.hello {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: dimgrey;
+    text-shadow: -1px 1px 0 #ffffff,
+        1px 1px 0#ffffff,
+        1px -1px 0#ffffff,
+        -1px -1px 0#ffffff;
+}
+
+.main a button {
+
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: red;
+    padding: 30px 62px;
+    text-align: center;
+    text-decoration: none;
+   
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.main a button h1 {
+    background-color: rgba(0, 0, 0, 0);
+    text-shadow: -1px 1px 0 #ffffff,
+        1px 1px 0#ffffff,
+        1px -1px 0#ffffff,
+        -1px -1px 0#ffffff;
+}
+
+.main a button h1:hover {
+    transform: scale(1.5);
+}
